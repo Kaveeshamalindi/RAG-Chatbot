@@ -4,6 +4,10 @@ A beginner-friendly Retrieval-Augmented Generation (RAG) chatbot that allows use
 
 This project uses Gemini 3 Flash as the language model and does not use OpenAI.
 
+<p align="center">
+  <img src="Images/img1.png" width="400" style="display: inline-block;">
+</p>
+
 ---
 
 ## 🚀 Technologies Used
@@ -24,6 +28,10 @@ RAG (Retrieval-Augmented Generation) combines document retrieval with an AI lang
 
 Instead of asking Gemini to answer a question only from its general knowledge, this project first searches the user's document for relevant information.
 
+<p align="center">
+  <img src="Images/img2.png" width="400" style="display: inline-block;">
+</p>
+
 ---
 
 ## 🔍 How the System Works
@@ -40,7 +48,7 @@ The project uses Gemini 3 Flash Preview as the Large Language Model.
 
 Gemini is responsible for generating the final answer using the relevant information retrieved from the PDF.
 
-### 📄 3. Reading the PDF
+### 3. Reading the PDF
 
 The PDF is processed using PyPDF.
 
@@ -52,7 +60,7 @@ The process is:
 
 The extracted text is then passed to the next stage.
 
-### ✂️ 4. Splitting Text into Chunks
+### 4. Splitting Text into Chunks
 
 Large documents are divided into smaller sections called chunks.
 
@@ -62,7 +70,7 @@ The process is:
 
 Chunking makes it easier to search for specific information instead of processing the entire document for every question.
 
-### 🔢 5. Creating Embeddings
+### 5. Creating Embeddings
 
 Each text chunk is converted into a numerical representation called an embedding using Sentence Transformers.
 
@@ -70,7 +78,7 @@ Embeddings represent the semantic meaning of text.
 
 This allows the system to identify text that is similar in meaning, even when the exact words are different.
 
-### 🗄️ 6. Storing Information in ChromaDB
+### 6. Storing Information in ChromaDB
 
 The text chunks and their embeddings are stored in ChromaDB, which acts as the vector database.
 
@@ -80,7 +88,7 @@ The stored information can be thought of as:
 
 **Text Chunk → Embedding → Vector Database**
 
-### 🔎 7. Retrieving Relevant Information
+### 7. Retrieving Relevant Information
 
 When the user asks a question, the question is converted into an embedding.
 
@@ -90,7 +98,7 @@ The system retrieves the most relevant chunks from the PDF.
 
 This is the Retrieval part of RAG.
 
-### 🤖 8. Generating the Answer with Gemini
+### 8. Generating the Answer with Gemini
 
 The retrieved chunks are provided to Gemini together with the user's question.
 
@@ -105,20 +113,21 @@ This is the Generation part of RAG.
 ---
 
 ## 📚 Concepts Practiced
-Retrieval-Augmented Generation (RAG)
-Large Language Models (LLMs)
-Gemini API
-PDF text extraction
-Text chunking
-Embeddings
-Vector databases
-Semantic search
-Similarity search
-Context retrieval
-Prompt construction
-Streamlit
-Environment variables
-Python project structure
+
+- Retrieval-Augmented Generation (RAG)
+- Large Language Models (LLMs)
+- Gemini API
+- PDF text extraction
+- Text chunking
+- Embeddings
+- Vector databases
+- Semantic search
+- Similarity search
+- Context retrieval
+- Prompt construction
+- Streamlit
+- Environment variables
+- Python project structure
 
 ---
 
