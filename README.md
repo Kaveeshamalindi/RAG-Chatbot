@@ -1,24 +1,24 @@
 # 📚 Simple RAG Chatbot
 
-A beginner-friendly Retrieval-Augmented Generation (RAG) chatbot that allows users to ask questions about information stored in a PDF document.
+A beginner-friendly **Retrieval-Augmented Generation (RAG)** chatbot that allows users to ask questions about information stored in a PDF document.
 
-This project uses Gemini 3 Flash as the language model and does not use OpenAI.
+This project uses **Gemini 3 Flash** as the language model.
 
 <p align="center">
-  <img src="Images/img1.png" width="600" style="display: inline-block;">
+  <img src="Images/img1.png" width="900" style="display: inline-block;">
 </p>
 
 ---
 
 ## 🚀 Technologies Used
 
-- Python: Main programming language
-- Streamlit: Creates the web interface
-- PyPDF: Extracts text from PDF files
-- Sentence Transformers: Creates text embeddings
-- ChromaDB: Stores and searches embeddings
-- Gemini 3 Flash: Generates answers
-- python-dotenv: Loads the Gemini API key
+- **Python**: Main programming language
+- **Streamlit**: Creates the web interface
+- **PyPDF**: Extracts text from PDF files
+- **Sentence Transformers**: Creates text embeddings
+- **ChromaDB**: Stores and searches embeddings
+- **Gemini 3 Flash**: Generates answers
+- **python-dotenv**: Loads the Gemini API key
 
 ---
 
@@ -38,19 +38,19 @@ Instead of asking Gemini to answer a question only from its general knowledge, t
 
 ### 1. Loading the Gemini API Key
 
-The Gemini API key is stored in an environment file rather than directly inside the Python source code.
+The **Gemini API key** is stored in an environment file rather than directly inside the Python source code.
 
 This helps protect sensitive credentials and prevents accidentally exposing the API key on GitHub.
 
 ### 2. Gemini Model
 
-The project uses Gemini 3 Flash Preview as the Large Language Model.
+The project uses **Gemini 3 Flash Preview** as the Large Language Model.
 
 Gemini is responsible for generating the final answer using the relevant information retrieved from the PDF.
 
 ### 3. Reading the PDF
 
-The PDF is processed using PyPDF.
+The PDF is processed using **PyPDF**.
 
 The system reads each page and extracts the available text.
 
@@ -62,7 +62,7 @@ The extracted text is then passed to the next stage.
 
 ### 4. Splitting Text into Chunks
 
-Large documents are divided into smaller sections called chunks.
+Large documents are divided into smaller sections called **chunks**.
 
 The process is:
 
@@ -72,7 +72,7 @@ Chunking makes it easier to search for specific information instead of processin
 
 ### 5. Creating Embeddings
 
-Each text chunk is converted into a numerical representation called an embedding using Sentence Transformers.
+Each text chunk is converted into a **numerical representation** called an **embedding** using Sentence Transformers.
 
 Embeddings represent the semantic meaning of text.
 
@@ -80,7 +80,7 @@ This allows the system to identify text that is similar in meaning, even when th
 
 ### 6. Storing Information in ChromaDB
 
-The text chunks and their embeddings are stored in ChromaDB, which acts as the vector database.
+The text chunks and their embeddings are stored in **ChromaDB**, which acts as the **vector database**.
 
 ChromaDB allows the system to efficiently search for chunks that are semantically similar to the user's question.
 
