@@ -5,7 +5,7 @@ A beginner-friendly Retrieval-Augmented Generation (RAG) chatbot that allows use
 This project uses Gemini 3 Flash as the language model and does not use OpenAI.
 
 <p align="center">
-  <img src="Images/img1.png" width="400" style="display: inline-block;">
+  <img src="Images/img1.png" width="600" style="display: inline-block;">
 </p>
 
 ---
@@ -29,7 +29,7 @@ RAG (Retrieval-Augmented Generation) combines document retrieval with an AI lang
 Instead of asking Gemini to answer a question only from its general knowledge, this project first searches the user's document for relevant information.
 
 <p align="center">
-  <img src="Images/img2.png" width="400" style="display: inline-block;">
+  <img src="Images/img2.jpg" width="600" style="display: inline-block;">
 </p>
 
 ---
