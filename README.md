@@ -56,7 +56,7 @@ Instead of asking Gemini to answer a question only from its general knowledge, t
 
 - The process is:
 
-**PDF → Pages → Extracted Text**
+&emsp; &emsp; **PDF → Pages → Extracted Text**
 
 - The extracted text is then passed to the next stage.
 
@@ -66,7 +66,7 @@ Instead of asking Gemini to answer a question only from its general knowledge, t
 
 - The process is:
 
-**Large Document → Full Text → Multiple Smaller Chunks**
+&emsp; &emsp; **Large Document → Full Text → Multiple Smaller Chunks**
 
 - Chunking makes it easier to search for specific information instead of processing the entire document for every question.
 
@@ -86,7 +86,7 @@ Instead of asking Gemini to answer a question only from its general knowledge, t
 
 - The stored information can be thought of as:
 
-**Text Chunk → Embedding → Vector Database**
+&emsp; &emsp; **Text Chunk → Embedding → Vector Database**
 
 ### 7. Retrieving Relevant Information
 
